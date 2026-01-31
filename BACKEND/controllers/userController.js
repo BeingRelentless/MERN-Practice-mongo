@@ -22,7 +22,8 @@ const postUser = async (req, res) => {
       message: "User created",
       user
     })
-  } catch (error) {
+  } 
+  catch (error) {
     res.status(400).json({
       message: "User creation failed",
       error: error.message
