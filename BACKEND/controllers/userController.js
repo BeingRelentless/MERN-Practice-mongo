@@ -31,7 +31,7 @@ const postUser = async (req, res) => {
   }
 }
 
-
+// delete controller 
 const deleteUser = async(req, res) => {
     const user = req.body.userId || req.body.email;
     User.deleteOne({user})
